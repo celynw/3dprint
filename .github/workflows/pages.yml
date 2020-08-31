@@ -9,7 +9,11 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          token: ${{secrets.MY_REPO_PAT}}
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
