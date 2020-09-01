@@ -67,7 +67,7 @@
     <article id="post-about" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="2020/09/01/about/" class="article-date">
-  <time datetime="2020-09-01T17:23:04.921Z" itemprop="datePublished">2020-09-01</time>
+  <time datetime="2020-09-01T17:24:48.567Z" itemprop="datePublished">2020-09-01</time>
 </a>
     
   </div>
@@ -91,7 +91,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/about/" data-id="ckek80b9o0002hqhkab09ai31" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/about/" data-id="ckek82kz20002c4ho3rqn57pk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,7 +128,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64/" data-id="ckek80b9m0001hqhk3eur75gz" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64/" data-id="ckek82kz10001c4ho3bdk0lk4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,7 +186,61 @@ Yes, I watched it almost the entire time!
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/3D-printer/" data-id="ckek80b9h0000hqhk3lsh279d" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/3D-printer/" data-id="ckek82kyu0000c4hofsmo9aqj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fixing-printer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="2020/08/31/fixing-printer/" class="article-date">
+  <time datetime="2020-08-31T12:36:24.000Z" itemprop="datePublished">2020-08-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2020/08/31/fixing-printer/">Fixing Printer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I need to fix the rebooting problem, unless I want to risk prints failing partway through.</p>
+<h3 id="Movement-too-restricted"><a href="#Movement-too-restricted" class="headerlink" title="Movement too restricted?"></a>Movement too restricted?</h3><p>No, I put it together very carefully and there’s no sign this is happening.</p>
+<h3 id="Corrupted-SD-card"><a href="#Corrupted-SD-card" class="headerlink" title="Corrupted SD card?"></a>Corrupted SD card?</h3><p>No, I tried a few models from various places, and different slicers, and get the same kind of problem.</p>
+<h3 id="Raspberry-Pi-causing-it"><a href="#Raspberry-Pi-causing-it" class="headerlink" title="Raspberry Pi causing it?"></a>Raspberry Pi causing it?</h3><p>No, I tried printing from the SD card in isolation, or from my PC with the USB cable.
+However, I did find that the USB connection cable causes some weird issues.
+Turning off the printer, and even unplugging it, it continues to be powered somehow.
+I had to cut the power wire out of the cable to prevent this from happening.</p>
+<h3 id="Power-problems"><a href="#Power-problems" class="headerlink" title="Power problems?"></a>Power problems?</h3><p>No, I tried many sockets, examining the internal connections, even powering off other appliances in the room.</p>
+<h3 id="Thermocouple"><a href="#Thermocouple" class="headerlink" title="Thermocouple!"></a>Thermocouple!</h3><p><em>Eventually</em>, I’ve discovered it was the thermocouple.
+The joint between the thermocouple and the rest of the wire is broken inside the heatshrink.
+So when the X position exceeds soemthing like 100mm, a thermal runaway is prevented by rebooting the printer.
+I wish it would at least tell me, or something!</p>
+<p><img src="/images/m_IMG_20200829_011408.jpg" alt="Broken thermocouple wire"></p>
+<p>Soldering the thermocouple would change the resistance and the target temperatures could be very wrong.
+Thermocouples are cheap on Amazon, I’ll just get a few replacements.
+But…
+In the meantime, I want to print!
+So I’ve wrapped the wire around tightly, and electrical taped it… Seems to be OK..!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/fixing-printer/" data-id="ckek82kz30003c4hoglyx13bi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -236,6 +290,10 @@ Yes, I watched it almost the entire time!
         
           <li>
             <a href="2020/08/31/3D-printer/">3D Printer</a>
+          </li>
+        
+          <li>
+            <a href="2020/08/31/fixing-printer/">Fixing Printer</a>
           </li>
         
       </ul>
