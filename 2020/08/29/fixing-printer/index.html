@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Fixing Printer | Celyn&#39;s 3D printing blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I need to fix the rebooting problem, unless I want to risk prints failing partway through. Movement too restricted?No, I put it together very carefully and there’s no sign this is happening. Corrupted">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fixing Printer">
+<meta property="og:url" content="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/">
+<meta property="og:site_name" content="Celyn&#39;s 3D printing blog">
+<meta property="og:description" content="I need to fix the rebooting problem, unless I want to risk prints failing partway through. Movement too restricted?No, I put it together very carefully and there’s no sign this is happening. Corrupted">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://celynwalters.github.io/3dprint/images/m_IMG_20200829_011408.jpg">
+<meta property="article:published_time" content="2020-08-29T01:14:08.000Z">
+<meta property="article:modified_time" content="2020-09-02T15:17:46.365Z">
+<meta property="article:author" content="Celyn Walters">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://celynwalters.github.io/3dprint/images/m_IMG_20200829_011408.jpg">
+  
+    <link rel="alternate" href="../../../../atom.xml" title="Celyn&#39;s 3D printing blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="../../../../css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="../../../../index.html" id="logo">Celyn&#39;s 3D printing blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="../../../../index.html">Home</a>
+        
+          <a class="main-nav-link" href="../../../../archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="../../../../atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://celynwalters.github.io/3dprint"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-fixing-printer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="" class="article-date">
+  <time datetime="2020-08-29T01:14:08.000Z" itemprop="datePublished">2020-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Fixing Printer
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I need to fix the rebooting problem, unless I want to risk prints failing partway through.</p>
+<h3 id="Movement-too-restricted"><a href="#Movement-too-restricted" class="headerlink" title="Movement too restricted?"></a>Movement too restricted?</h3><p>No, I put it together very carefully and there’s no sign this is happening.</p>
+<h3 id="Corrupted-SD-card"><a href="#Corrupted-SD-card" class="headerlink" title="Corrupted SD card?"></a>Corrupted SD card?</h3><p>No, I tried a few models from various places, and different slicers, and get the same kind of problem.</p>
+<h3 id="Raspberry-Pi-causing-it"><a href="#Raspberry-Pi-causing-it" class="headerlink" title="Raspberry Pi causing it?"></a>Raspberry Pi causing it?</h3><p>No, I tried printing from the SD card in isolation, or from my PC with the USB cable.
+However, I did find that the USB connection cable causes some weird issues.
+Turning off the printer, and even unplugging it, it continues to be powered somehow.
+I had to cut the power wire out of the cable to prevent this from happening.</p>
+<h3 id="Power-problems"><a href="#Power-problems" class="headerlink" title="Power problems?"></a>Power problems?</h3><p>No, I tried many sockets, examining the internal connections, even powering off other appliances in the room.</p>
+<h3 id="Thermocouple"><a href="#Thermocouple" class="headerlink" title="Thermocouple!"></a>Thermocouple!</h3><p><em>Eventually</em>, I’ve discovered it was the thermocouple.
+The joint between the thermocouple and the rest of the wire is broken inside the heatshrink.
+So when the X position exceeds soemthing like 100mm, a thermal runaway is prevented by rebooting the printer.
+I wish it would at least tell me, or something!</p>
+<p><img src="/3dprint/images/m_IMG_20200829_011408.jpg" alt="Broken thermocouple wire"></p>
+<p>Soldering the thermocouple would change the resistance and the target temperatures could be very wrong.
+Thermocouples are cheap on Amazon, I’ll just get a few replacements.
+But…
+In the meantime, I want to print!
+So I’ve wrapped the wire around tightly, and electrical taped it… Seems to be OK..!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/" data-id="ckeliyu1w0005eyiwbrqbh72x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="../../30/bed-handle/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Bed Handle
+        
+      </div>
+    </a>
+  
+  
+    <a href="../../28/webcam-tripod-mount/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Webcam Tripod Mount</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="../../../09/02/xiaomi-scooter-parts/">Xiaomi Scooter Parts</a>
+          </li>
+        
+          <li>
+            <a href="../../../09/01/N64-logo-version-2/">N64 Logo Version 2</a>
+          </li>
+        
+          <li>
+            <a href="../../31/N64-logo/">N64 Logo</a>
+          </li>
+        
+          <li>
+            <a href="../../31/chip-clip/">Chip-Clip</a>
+          </li>
+        
+          <li>
+            <a href="../../31/mask/">Mask</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Celyn Walters<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="../../../../index.html" class="mobile-nav-link">Home</a>
+  
+    <a href="../../../../archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="../../../../fancybox/jquery.fancybox.css">
+
+  
+<script src="../../../../fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="../../../../js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
