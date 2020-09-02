@@ -1,7 +1,8 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  Home: /3dprint/
+  Print checklist: checklist
+  Archives: /3dprint/archives
 rss: /atom.xml
 
 # Content
