@@ -66,6 +66,76 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-bearing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="2020/09/02/bearing/" class="article-date">
+  <time datetime="2020-09-02T21:41:00.000Z" itemprop="datePublished">2020-09-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2020/09/02/bearing/">Bearing</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I wanted to print a real model this time.
+However, I’d want to paint it, and I’m not experienced enough with that yet.
+I’ll sand, prime and paint my <a href="/3dprint/2020/09/01/N64-logo-version-2/" title="N64 logo">N64 logo</a> first as a test.</p>
+<p>So instead I decided to do a mechanical print-in-place model, the 5 internal gears.
+I’m only going to use the defaults for this at a reasonable quality.</p>
+<p><img src="/3dprint/images/m_IMG_20200902_230836.jpg" alt="Completed parts"></p>
+<p>It seems that I’m still getting a bit of an elephant’s foot.
+Since the temperatures are so low now, I believe the Z offset is too small.
+Now that I have good adhesion I can afford to raise the nozzle a little next time.</p>
+<p>Unfortunately, I could not get this to budge!
+I’m pretty sure this is because the lower layers are bound together because they were squashed together.
+Next time I’ll raise the Z offset until it just still adheres…</p>
+<hr>
+<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Preset basis</td>
+<td>Cura dynamic (0.16mm)</td>
+</tr>
+<tr>
+<td>Bed temperature (first layer)</td>
+<td>50°</td>
+</tr>
+<tr>
+<td>Bed temperature</td>
+<td>45°</td>
+</tr>
+</tbody></table>
+<video width='50%' height='250px' controls><source src='/3dprint/videos/bearing.webm' type=video/webm> Your browser does not support the webm tag.</video>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/bearing/" data-id="ckemqn8mx0004zqho36qr4j2e" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-xiaomi-scooter-parts" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="2020/09/02/xiaomi-scooter-parts/" class="article-date">
@@ -119,26 +189,50 @@ There’s one where you can set manual brims with a mouse click, I’ll use this
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard quality (0.2mm)</td>
 </tr>
 <tr>
-<td>Infill</td>
-<td>Gyroid</td>
+<td>Build plate temperature</td>
+<td>50°</td>
 </tr>
 <tr>
-<td>Infill %</td>
+<td>Infill density</td>
 <td>40%</td>
 </tr>
 <tr>
-<td>Alternate infill walls</td>
+<td>Infill pattern</td>
+<td>Cubic Subdivision</td>
+</tr>
+<tr>
+<td>Connect infill lines</td>
 <td>✓</td>
 </tr>
 <tr>
-<td>Number of wall layers</td>
-<td>4</td>
+<td>Skirt distance</td>
+<td>5mm</td>
 </tr>
 <tr>
-<td>Z hop when retracting</td>
+<td>Skirt line count</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Z hop only over printed parts</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Z hop when retracted</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Retract at layer change</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Wall line count</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Alternate extra wall</td>
 <td>✓</td>
 </tr>
 </tbody></table>
@@ -147,7 +241,7 @@ There’s one where you can set manual brims with a mouse click, I’ll use this
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/xiaomi-scooter-parts/" data-id="ckelmi91p0009b9hk6ual4avi" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/xiaomi-scooter-parts/" data-id="ckemqn8n5000azqhoaaa96517" class="article-share-link">Share</a>
       
       
     </footer>
@@ -202,11 +296,51 @@ I guess this one is easy to sand, though.</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard quality (0.2mm)</td>
 </tr>
 <tr>
-<td>Infill</td>
+<td>Infill density</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
 <td>Gyroid</td>
+</tr>
+<tr>
+<td>Connect infill lines</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Filter out tiny gaps</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Ironing speed</td>
+<td>90mm/s</td>
+</tr>
+<tr>
+<td>Horizontal expansion</td>
+<td>1mm</td>
+</tr>
+<tr>
+<td>Z seam alignment</td>
+<td>Random</td>
+</tr>
+<tr>
+<td>Top/bottom pattern</td>
+<td>Concentric</td>
+</tr>
+<tr>
+<td>Ironing flow</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Outer wall wipe distance</td>
+<td>5mm</td>
+</tr>
+<tr>
+<td>Print speed</td>
+<td>25mm/s</td>
 </tr>
 </tbody></table>
 <video width='50%' height='250px' controls><source src='/3dprint/videos/N64-logo-version-2.webm' type=video/webm> Your browser does not support the webm tag.</video>
@@ -214,7 +348,7 @@ I guess this one is easy to sand, though.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64-logo-version-2/" data-id="ckelmi91f0002b9hkhkov2wzx" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64-logo-version-2/" data-id="ckemqn8mv0002zqhof9cw1zud" class="article-share-link">Share</a>
       
       
     </footer>
@@ -268,11 +402,27 @@ I’ll add a brim to prevent curling,a nd I can peel it off afterwards.</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard quality (0.2mm)</td>
 </tr>
 <tr>
-<td>Infill</td>
+<td>Build plate adhesion type</td>
+<td>Brim</td>
+</tr>
+<tr>
+<td>Brim width</td>
+<td>2mm</td>
+</tr>
+<tr>
+<td>Infill density</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
 <td>Gyroid</td>
+</tr>
+<tr>
+<td>Outer wall wipe distance</td>
+<td>1mm</td>
 </tr>
 </tbody></table>
 <video width='50%' height='250px' controls><source src='/3dprint/videos/N64.webm' type=video/webm> Your browser does not support the webm tag.</video>
@@ -280,7 +430,7 @@ I’ll add a brim to prevent curling,a nd I can peel it off afterwards.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/N64-logo/" data-id="ckelmi91g0003b9hkhr2vfsa1" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/N64-logo/" data-id="ckemqn8mw0003zqho1j9paz9s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,14 +480,26 @@ Next time.</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard (0.2mm)</td>
+</tr>
+<tr>
+<td>Skirt distance</td>
+<td>3mm</td>
+</tr>
+<tr>
+<td>Skirt line count</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Infill density</td>
+<td>100%</td>
 </tr>
 </tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/chip-clip/" data-id="ckelmi91i0005b9hkhcp1f0py" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/chip-clip/" data-id="ckemqn8mz0006zqhogfgw8858" class="article-share-link">Share</a>
       
       
     </footer>
@@ -383,18 +545,14 @@ He had complained about the strap on his ears, so this should be an easy fix!</p
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
-</tr>
-<tr>
-<td>Infill</td>
-<td>Gyroid</td>
+<td>Cura standard quality (0.2mm)</td>
 </tr>
 </tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/mask/" data-id="ckelmi91l0007b9hk8fk1ck4i" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/mask/" data-id="ckemqn8n30008zqho5eldfz4p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -449,10 +607,18 @@ At least the bed handle will come in useful.</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard quality (0.2mm)</td>
 </tr>
 <tr>
-<td>Infill</td>
+<td>Skirt distance</td>
+<td>5mm</td>
+</tr>
+<tr>
+<td>Infill density</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
 <td>Gyroid</td>
 </tr>
 </tbody></table>
@@ -461,7 +627,7 @@ At least the bed handle will come in useful.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/30/bed-handle/" data-id="ckelmi91h0004b9hk96o1c4d8" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/30/bed-handle/" data-id="ckemqn8my0005zqho0etnfan2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -515,7 +681,7 @@ So I’ve wrapped the wire around tightly, and electrical taped it… Seems to b
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/" data-id="ckelmi91j0006b9hk5jzi859q" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/" data-id="ckemqn8n00007zqhodz11gyg5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -586,7 +752,27 @@ I’ll adjust the design but I won’t re-print it.</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura super quality (0.12mm)</td>
+</tr>
+<tr>
+<td>Initial layer height</td>
+<td>0.2mm</td>
+</tr>
+<tr>
+<td>Generate support</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Support placement</td>
+<td>buildplate</td>
+</tr>
+<tr>
+<td>Support pattern</td>
+<td>gyroid</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
+<td>gyroid</td>
 </tr>
 </tbody></table>
 <video width='50%' height='250px' controls><source src='/3dprint/videos/webcam-tripod-mount.webm' type=video/webm> Your browser does not support the webm tag.</video>
@@ -594,7 +780,7 @@ I’ll adjust the design but I won’t re-print it.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/28/webcam-tripod-mount/" data-id="ckelmi91o0008b9hkbb3zhhu0" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/28/webcam-tripod-mount/" data-id="ckemqn8n40009zqho8um52qes" class="article-share-link">Share</a>
       
       
     </footer>
@@ -664,14 +850,14 @@ It fits in the back compartment nicely though!</p>
 </thead>
 <tbody><tr>
 <td>Preset basis</td>
-<td>Cura standard</td>
+<td>Cura standard (0.2mm)</td>
 </tr>
 </tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/27/3D-printer/" data-id="ckelmi91c0001b9hk426l61jw" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/27/3D-printer/" data-id="ckemqn8ms0001zqho3ojhfqle" class="article-share-link">Share</a>
       
       
     </footer>
@@ -712,6 +898,10 @@ It fits in the back compartment nicely though!</p>
       <ul>
         
           <li>
+            <a href="2020/09/02/bearing/">Bearing</a>
+          </li>
+        
+          <li>
             <a href="2020/09/02/xiaomi-scooter-parts/">Xiaomi Scooter Parts</a>
           </li>
         
@@ -725,10 +915,6 @@ It fits in the back compartment nicely though!</p>
         
           <li>
             <a href="2020/08/31/chip-clip/">Chip-Clip</a>
-          </li>
-        
-          <li>
-            <a href="2020/08/31/mask/">Mask</a>
           </li>
         
       </ul>
