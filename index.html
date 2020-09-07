@@ -66,6 +66,283 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-sanding-tool" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="2020/09/04/sanding-tool/" class="article-date">
+  <time datetime="2020-09-04T23:39:16.000Z" itemprop="datePublished">2020-09-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2020/09/04/sanding-tool/">Sanding Tool</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I have a big roll of sandpaper, I could do with something to hold it with to clean up my prints.
+I looked on thingiverse and found <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:2404850">something ideal</a>.
+However, it’s way too small, this is more like a nail file.
+It’s customisable though.
+But the Thingiverse customiser is so slow!
+And once I was done I had to wait for it to finish processing, and it never did.
+The Thingiverse with is having some real issues recently.
+So I decided to design my own in Fusion360.</p>
+<h2 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h2><p><img src="/3dprint/images/m_sanding-tool.png" alt="Cross-section of design in Fusion360"></p>
+<p>\I kept close to the original design on Thingiverse, but wanted it to fit nicely in the hand and also fit to a standard size of the roll of sandpaper.
+This meant moving the screws to side-by-side, and having to design threaded bolts and their holes.
+I gave them some tactile bumps and offset the faces/used a bevel to give them some room internally.</p>
+<p><img src="/3dprint/images/m_IMG_20200904_232926.jpg" alt="Screws"></p>
+<p>I printed the screws first.
+They printed nicely, although maybe I should have used concentric top layers to make them look nicer.</p>
+<p><img src="/3dprint/images/m_IMG_20200904_233916.jpg" alt="Plate with bend"></p>
+<p>The plate curled and bent along the longest edge.
+I realised I shouldn’t be lowering the temperature so much.
+5°C is probably too much, maximum 2°C, but maybe I don’t actually need to do this anymore, since it’s not the cause of the elephant’s foot.
+The bend in this case is not really a problem though, as it’s in the other axis and will still clamp the paper.</p>
+<p><img src="/3dprint/images/m_IMG_20200905_214104.jpg" alt="Beautiful ironed surface">
+<img src="/3dprint/images/m_IMG_20200905_214029.jpg" alt="Pretty flat surface"></p>
+<p>I then printed the body.
+I used a larger layer size, faster print speed, and tightened the belts more.
+I also tried out ironing, as I had a bit flat surface (although it won’t really be seen when in use).
+I’m keeping the Z offset, but using a thicker first layer.</p>
+<p>I’m very happy with these settings!
+The ironed surface is so smooth.
+There’s also no warping, although again, it’s difficult to remove all of the brim.
+The screws fit nicely, and it all fits together.</p>
+<p><img src="/3dprint/images/m_IMG_20200905_215340.jpg" alt="Assembled"></p>
+<p>I also made a quick and dirty sandpaper slicer.
+The width of my tool is exactly half the width of the sandpaper roll, so with this I can use my knife to make perfectly sized strips.</p>
+<p><img src="/3dprint/images/m_IMG_20200907_124215.jpg" alt="Sandpaper slicer">
+<img src="/3dprint/images/m_IMG_20200905_221056.jpg" alt="Tool with the sandpaper"></p>
+<p>I tested it out on my Nintendo 64 logo and it’s really helpful.
+Overall, a success.</p>
+<p><img src="/3dprint/images/m_IMG_20200905_221442.jpg" alt="Left vs. right"></p>
+<video width='50%' height='250px' controls><source src='/3dprint/videos/VID_20200905_221823.webm' type=video/webm> Your browser does not support the webm tag.</video>
+
+<h2 id="Alternatives"><a href="#Alternatives" class="headerlink" title="Alternatives"></a>Alternatives</h2><p>Now I’ve looked again I found some others on Thingiverse which might have been fine or better:</p>
+<ul>
+<li>Like <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:3159240">this one</a>, I could have left room for felt, or had an easier securing mechanism</li>
+<li>And <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:4213742">this</a> seems much more efficient on filament</li>
+<li>I might just print <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:3246414">this one</a> as I’ll need to get to the more difficult parts as well</li>
+<li>As a bonus, [<a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:3847224/files]">https://www.thingiverse.com/thing:3847224/files]</a>(this one) is the most efficiently printed of all…</li>
+</ul>
+<hr>
+<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Preset basis</td>
+<td>Cura dynamic (0.16mm)</td>
+</tr>
+<tr>
+<td>Build plate temperature initial layer</td>
+<td>57°</td>
+</tr>
+<tr>
+<td>Build plate temperature</td>
+<td>55°</td>
+</tr>
+<tr>
+<td>Build plate adhesion type</td>
+<td>brim</td>
+</tr>
+<tr>
+<td>Brim line type</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
+<td>gyroid</td>
+</tr>
+<tr>
+<td>Infill density</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Connect infill lines</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Enable ironing</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Outer wall wipe distance</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Wall line count</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Alternate extra wall</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Z seam position</td>
+<td>Back right</td>
+</tr>
+<tr>
+<td>Top/Bottom speed</td>
+<td>30mm/s</td>
+</tr>
+<tr>
+<td>Wall speed</td>
+<td>25mm/s</td>
+</tr>
+<tr>
+<td>Print speed</td>
+<td>100mm/s</td>
+</tr>
+</tbody></table>
+<video width='50%' height='250px' controls><source src='/3dprint/videos/sanding-tool.webm' type=video/webm> Your browser does not support the webm tag.</video>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/04/sanding-tool/" data-id="ckeshbc44000ahxhog4syc9l1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-kinect-mounts" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="2020/09/03/kinect-mounts/" class="article-date">
+  <time datetime="2020-09-03T14:45:34.000Z" itemprop="datePublished">2020-09-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2020/09/03/kinect-mounts/">Kinect Mounts</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The Kinect V1 needs to be mounted onto the Turtlebot.
+However, we don’t seem to have copies of the official mounting kit.
+Instead, there are some <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:575664">printed brackets</a>, but they are splitting on the layers and I think could do with being replaced.
+Unfortunately, I think it’s designed to house a nut, and we have bolts, so I’ll have to cut a gap for it to enter.
+(Yes I could model this instead but I’m busy).</p>
+<p>Trying with a Z-offset this time.
+0.2mm was too high, when using the ‘super quality’ 0.12mm layer height, but 0.1mm was fine.
+I have upped the temperature back to 60°, but reducing it to 50° after the first layer.</p>
+<p>This time, no sign of elephant feet!
+I was a bit concerned with the density of the brim, but otherwise, very clean (once I trimmed the stringy bits).</p>
+<p><img src="/3dprint/images/m_IMG_20200903_153431.jpg" alt="Complete print"></p>
+<p><img src="/3dprint/images/m_IMG_20200903_153921.jpg" alt="Nice smooth edges"></p>
+<p>Of course, just like the old ones, they don’t fit properly and it’s very difficult to get both screws in.
+I’ll have to design my own which actually fit.</p>
+<hr>
+<h2 id="Revisit"><a href="#Revisit" class="headerlink" title="Revisit"></a>Revisit</h2><p>So the first layer is <em>supposed</em> to be squashed down, so it adheres to the bed properly and so the lines join together.
+I think I might continue to use th 0.1mm Z offset, but instead put down a thicker first layer.</p>
+<p>Also, the layer orientation <em>does</em> matter; these broke apart a bit quickly, I’ll print them horizontally with supports next time.</p>
+<hr>
+<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Preset basis</td>
+<td>Cura super quality (0.16mm)</td>
+</tr>
+<tr>
+<td>Build plate temperature</td>
+<td>50°</td>
+</tr>
+<tr>
+<td>Build plate temperature initial layer</td>
+<td>60°</td>
+</tr>
+<tr>
+<td>Build plate adhesion type</td>
+<td>Brim</td>
+</tr>
+<tr>
+<td>Z offset</td>
+<td>0.1mm</td>
+</tr>
+<tr>
+<td>Brim width</td>
+<td>2mm</td>
+</tr>
+<tr>
+<td>Alternate extra wall</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Outer before inner walls</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Z hop only over printed parts</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Z hop when retracted</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Retract at layer change</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
+<td>Zigzag</td>
+</tr>
+<tr>
+<td>Infill density</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Print speed</td>
+<td>80mm/s</td>
+</tr>
+</tbody></table>
+<video width='50%' height='250px' controls><source src='/3dprint/videos/kinect-mounts.webm' type=video/webm> Your browser does not support the webm tag.</video>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/03/kinect-mounts/" data-id="ckeshbc3y0008hxho9cwi9zr3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-bearing" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="2020/09/02/bearing/" class="article-date">
@@ -126,7 +403,7 @@ Next time I’ll raise the Z offset until it just still adheres…</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/bearing/" data-id="ckeqsukbd0004aqhl0vifa5su" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/bearing/" data-id="ckeshbc3u0004hxho75qkadaz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -241,7 +518,7 @@ There’s one where you can set manual brims with a mouse click, I’ll use this
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/xiaomi-scooter-parts/" data-id="ckeqsukbo000aaqhlavwa27fb" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/02/xiaomi-scooter-parts/" data-id="ckeshbc47000chxhodneferaa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -349,7 +626,7 @@ I guess this one is easy to sand, though.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64-logo-version-2/" data-id="ckeqsukb70002aqhlgri25p6x" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/09/01/N64-logo-version-2/" data-id="ckeshbc3s0002hxho3h46e8jj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -431,7 +708,7 @@ I’ll add a brim to prevent curling,a nd I can peel it off afterwards.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/N64-logo/" data-id="ckeqsukb90003aqhldw3lg385" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/N64-logo/" data-id="ckeshbc3t0003hxhofx0dhrbd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -500,7 +777,7 @@ Next time.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/chip-clip/" data-id="ckeqsukbg0006aqhlgzxa34nb" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/chip-clip/" data-id="ckeshbc3w0006hxho4j3u0aen" class="article-share-link">Share</a>
       
       
     </footer>
@@ -553,7 +830,7 @@ He had complained about the strap on his ears, so this should be an easy fix!</p
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/mask/" data-id="ckeqsukbm0008aqhle26qgezo" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/31/mask/" data-id="ckeshbc430009hxho6did83ou" class="article-share-link">Share</a>
       
       
     </footer>
@@ -628,7 +905,7 @@ At least the bed handle will come in useful.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/30/bed-handle/" data-id="ckeqsukbe0005aqhlb1pldb8f" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/30/bed-handle/" data-id="ckeshbc3v0005hxho65qe9zsk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -682,183 +959,7 @@ So I’ve wrapped the wire around tightly, and electrical taped it… Seems to b
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/" data-id="ckeqsukbl0007aqhl4znncrj2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-webcam-tripod-mount" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="2020/08/28/webcam-tripod-mount/" class="article-date">
-  <time datetime="2020-08-28T22:55:00.000Z" itemprop="datePublished">2020-08-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="2020/08/28/webcam-tripod-mount/">Webcam Tripod Mount</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I want to be able to print tripod-mountable things, with the first order of business being a webcam mount so I can film timelapses of my prints.
-Lots of these exist on Thingiverse already, even for this specific webcam (an old Logitech C130), but I’m not satisfied.
-It shouldn’t require extra bolts!
-So I’ll design one myself.
-This means being able to screw onto a standard tripod screw, so I’ll have to print the thread.
-I know this would be a real pain to model manually.
-I found that Autodesk Fusion 360 can mostly automate this, and it’s relatively simple to add clearances!</p>
-<p>First, I designed a simple hex nut without any extra clearance (B2), as the bolt would be a real steel one and not a printed one.
-This came out fine, but was much too tight.
-It was even difficult to force something into it.
-I put some text on it to keep a track of the type and settings, but it didn’t come out at all.</p>
-<p><img src="/3dprint/images/m_IMG_20200829_024629.jpg" alt="First bolt print"></p>
-<p>The second has some clearance.
-This was easier to force into, but still became more difficult the further it went in.
-The more-engraved text was not readable.</p>
-<p>Now I was pretty sure that I could get the nut right the next time, so would combined it with the mounting part in a single print.</p>
-<p>Using the original as reference, I made a 1:1 reconstruction using a digital caliper and Fusion 360.
-This took lots of time but I still have to learn how it works.
-History, sketches, components, analysis planes, bevels, even exporting to <code>.STL</code> isn’t obvious or straight forward.
-The original piece was a bit complicated, with flat sections to restrict movement and provide some friction.</p>
-<p>The final result was almost perfect.
-The thread is great.
-The bevel is less than I expected.
-The end recesses are not wide enough for the end cap and screw, but I wanted it to go in so I forced it.
-This caused it to split slightly, but otherwise the webcam is held well, and all movement is as it was on the old one.
-Nice!
-I’ll adjust the design but I won’t re-print it.</p>
-<p><img src="/3dprint/images/m_IMG_20200829_122514.jpg" alt="New (with bolt) next to reference"></p>
-<p><img src="/3dprint/images/m_IMG_20200830_000154.jpg" alt="Mounted webcam!"></p>
-<hr>
-<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><table>
-<thead>
-<tr>
-<th>Setting</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Preset basis</td>
-<td>Cura super quality (0.12mm)</td>
-</tr>
-<tr>
-<td>Initial layer height</td>
-<td>0.2mm</td>
-</tr>
-<tr>
-<td>Generate support</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>Support placement</td>
-<td>buildplate</td>
-</tr>
-<tr>
-<td>Support pattern</td>
-<td>gyroid</td>
-</tr>
-<tr>
-<td>Infill pattern</td>
-<td>gyroid</td>
-</tr>
-</tbody></table>
-<video width='50%' height='250px' controls><source src='/3dprint/videos/webcam-tripod-mount.webm' type=video/webm> Your browser does not support the webm tag.</video>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/28/webcam-tripod-mount/" data-id="ckeqsukbn0009aqhlhy46h0va" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-3D-printer" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="2020/08/27/3D-printer/" class="article-date">
-  <time datetime="2020-08-27T15:50:57.000Z" itemprop="datePublished">2020-08-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="2020/08/27/3D-printer/">3D Printer</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>My new 3D printer (Creality Ender 3 V2) arrived today!
-It only took 5 days to arrive, from CZ.
-This weekend is a long one due to the bank holiday - time to build!
-I’m keeping this blog as a self-reference for the things I learned, and somewhere to post my settings and photos.</p>
-<h2 id="Construction"><a href="#Construction" class="headerlink" title="Construction"></a>Construction</h2><p>I set it up very carfeully following YouTube videos.
-It was difficult to tell which way I had to tighten the concentric casters, but everything went smoothly.</p>
-<p><img src="/3dprint/images/s_IMG_20200827_155007.jpg" alt="Newly assembled 3D printer"></p>
-<p>I did however scratch the bed a bit.
-Not convinced it’s a problem.
-When wiping the bed down, the scratches become completely invisible, only to reappear when it dries (maybe slightly fainter?).</p>
-<h2 id="First-print"><a href="#First-print" class="headerlink" title="First print"></a>First print</h2><p>I decided to print a file from the SD card, and timelapse this <em>historic</em> moment.
-I had already set up Octoprint on my Rapsberry Pi, and so I tried to print the example cat file.
-5 seconds in, it aborted.
-Why??</p>
-<p><img src="/3dprint/images/m_IMG_20200827_162729.jpg" alt="Aborted here every time"></p>
-<p>Octoprint noticed that the connection was lost.
-I tried it a few times and got the same results.
-It always fails in exactly the same places.
-I tried everything!
-I was eventually somehow able to print a Benchy, but how can I stop this from happening again?</p>
-<video width='50%' height='250px' controls><source src='/3dprint/videos/VID_20200828_010428.webm' type=video/webm> Your browser does not support the webm tag.</video>
-
-<p>It took 2 hours.
-Yes, I watched it almost the entire time!
-(Partly because it was 2am and I needed it to finish so I could sleep)</p>
-<p><img src="/3dprint/images/m_IMG_20200901_181455.jpg" alt="First Benchy!"></p>
-<p>We tried to see if it would float (it does, just not upright…), and on shaking the water off I let go.
-So the chimney broke off.
-It fits in the back compartment nicely though!</p>
-<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><table>
-<thead>
-<tr>
-<th>Setting</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Preset basis</td>
-<td>Cura standard (0.2mm)</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://celynwalters.github.io/3dprint/2020/08/27/3D-printer/" data-id="ckeqsukb50001aqhl0n13bnr0" class="article-share-link">Share</a>
+      <a data-url="https://celynwalters.github.io/3dprint/2020/08/29/fixing-printer/" data-id="ckeshbc3x0007hxho5l1j7z92" class="article-share-link">Share</a>
       
       
     </footer>
@@ -869,6 +970,11 @@ It fits in the back compartment nicely though!</p>
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="page/2/">2</a><a class="extend next" rel="next" href="page/2/">Next &amp;raquo;</a>
+  </nav>
 
 </section>
         
@@ -899,6 +1005,14 @@ It fits in the back compartment nicely though!</p>
       <ul>
         
           <li>
+            <a href="2020/09/04/sanding-tool/">Sanding Tool</a>
+          </li>
+        
+          <li>
+            <a href="2020/09/03/kinect-mounts/">Kinect Mounts</a>
+          </li>
+        
+          <li>
             <a href="2020/09/02/bearing/">Bearing</a>
           </li>
         
@@ -908,14 +1022,6 @@ It fits in the back compartment nicely though!</p>
         
           <li>
             <a href="2020/09/01/N64-logo-version-2/">N64 Logo Version 2</a>
-          </li>
-        
-          <li>
-            <a href="2020/08/31/N64-logo/">N64 Logo</a>
-          </li>
-        
-          <li>
-            <a href="2020/08/31/chip-clip/">Chip-Clip</a>
           </li>
         
       </ul>
